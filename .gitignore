@@ -1,0 +1,6 @@
+.obsidian/
+
+!.obsidian/command-palette.json
+!.obsidian/core-plugins.json
+
+.trash/
