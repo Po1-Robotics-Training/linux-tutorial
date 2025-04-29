@@ -19,6 +19,12 @@ margin: "0.3"
 
 ---
 
+## Linux的用語
+
+在Windows中，大家有資料夾Folders，C盤C drive C:\ ，
+
+---
+
 ## Coreutils是什麼來的?
 
 它是一套有着能使用戶們可以對系統進行基本的軟體集。
@@ -58,4 +64,4 @@ margin: "0.3"
 
 ### `ls`
 
-ls 是用
+ls 是用來列出(list)現時目錄中的files和directories
