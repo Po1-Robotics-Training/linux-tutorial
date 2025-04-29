@@ -32,3 +32,4 @@ tags:
 8. mkdir
 9. md5sum
 10. touch
+11. echo
