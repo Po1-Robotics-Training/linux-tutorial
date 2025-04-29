@@ -1,0 +1,12 @@
+{
+  "editor:toggle-italics": [],
+  "obsidian-git:edit-gitignore": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "I"
+    }
+  ]
+}
