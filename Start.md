@@ -21,7 +21,7 @@ margin: "0.3"
 
 ## Linux的用語
 
-在Windows中，大家有資料夾Folders，C盤C drive C:\ ，
+在Windows中，大家有資料夾/Folders，C盤/C drive `C:\` ，
 
 ---
 
