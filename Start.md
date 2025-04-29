@@ -21,7 +21,12 @@ margin: "0.3"
 
 ## Linux的用語
 
-在Windows中，大家有資料夾/Folders，C盤/C drive `C:\` ，
+在Windows中，大家有資料夾/Folders，C盤/C drive `C:\` 和 檔案/Files
+
+在Linux中，有着自己專業的字眼
+- 資料夾叫做Directories
+- C drive 的概念是有點不同，叫做Devices，系統的最高層叫Root，而每個device連上的位置叫Mount
+- Home folder是`/home/<username>`
 
 ---
 
