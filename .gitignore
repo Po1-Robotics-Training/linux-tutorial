@@ -1,5 +1,7 @@
-.obsidian/plugins
+.obsidian/plugins/*/*
+!.obsidian/plugins/*/data.json
+
+.obsidian/workspace.json
 
 .trash/
 
-.obsidian/workspace.json
