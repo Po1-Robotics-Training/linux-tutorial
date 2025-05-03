@@ -83,9 +83,10 @@ ls 是用來列出(list)現時目錄中的files和directories
 
 cd is used for changing directories
 
-When typed without a path, it returns you to your home directory. 
+When typed without a path, it returns you to your home directory.
 
 For example:
+
 ```bash
 # This two commands does the same thing, both returning you to your home directory
 cd ~
@@ -99,3 +100,13 @@ cd .. # Change to upper directory
 
 cd . # Change to current directory
 ```
+
+---
+
+### `pwd`
+
+### `cat`
+
+### `cp`
+
+### `rm`
