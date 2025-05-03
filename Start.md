@@ -71,11 +71,41 @@ margin: "0.3"
 
 ls 是用來列出(list)現時目錄中的files和directories
 
--l stands for list form, it turns the output into a more informative list
+`-l` stands for list form, it turns the output into a more informative list
 
--A stands for all, it allows you to see the hidden files that starts with a dot (.)
+`-A` stands for all, it allows you to see the hidden files that starts with a dot (.)
 
--F stands for classify, it appends indicators after the file name to show what type of file it is
+`-F` stands for classify, it appends indicators after the file name to show what type of file it is
+
+---
+
+The current directory is `/home/user/Documents`
+The contents are file1, file2, .file3, file4
+
+```bash
+$ ls
+file1  file2  file4
+$ ls -l
+total 0
+-rw-r--r-- 1 user user 0 May  3 12:55 file1
+-rw-r--r-- 1 user user 0 May  3 12:55 file2
+-rwxr--r-- 1 user user 0 May  3 12:55 file4
+$ ls -A
+file1  file2  .file3  file4
+$ ls -F
+file1  file2  file4*
+```
+
+```bash
+$ ls -lAF
+total 0
+-rw-r--r-- 1 user user 0 May  3 12:55 file1
+-rw-r--r-- 1 user user 0 May  3 12:55 file2
+-rw-r--r-- 1 user user 0 May  3 12:55 .file3
+-rwxr--r-- 1 user user 0 May  3 12:55 file4*
+```
+
+As for why file4 shows up with a star, you'd learn about it in the [[Permission]] section.
 
 ---
 
@@ -90,16 +120,16 @@ For example:
 ```bash
 # This two commands does the same thing, 
 # both returning you to your home directory
-cd ~
-cd
+$ cd ~
+$ cd
 
-cd / # / stands for root
+$ cd / # / stands for root
 # change directory to the .local directory in your home
-cd ~/.local
+$ cd ~/.local
 
-cd .. # Change to upper directory
+$ cd .. # Change to upper directory
 
-cd . # Change to current directory
+$ cd . # Change to current directory
 ```
 
 ---
