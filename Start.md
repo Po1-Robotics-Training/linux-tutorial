@@ -48,17 +48,17 @@ margin: "0.3"
 
 ::: block
 
-2. rm
-3. mv
-4. mkdir
-5. md5sum
-6. touch
+6. rm
+7. mv
+8. mkdir
+9. md5sum
+10. touch
 
 :::
 
 ::: block
 
-7. echo
+11. echo
 :::
 
 </split>
@@ -88,7 +88,8 @@ When typed without a path, it returns you to your home directory.
 For example:
 
 ```bash
-# This two commands does the same thing, both returning you to your home directory
+# This two commands does the same thing, 
+# both returning you to your home directory
 cd ~
 cd
 
@@ -105,8 +106,123 @@ cd . # Change to current directory
 
 ### `pwd`
 
+stands for Print working directory
+
+it shows you the current directory in the file system.
+
+---
+
 ### `cat`
+
+`cat` stands for con==CAT==enate
+
+it is used to output one or more file's content and turn them into one single output
+
+---
 
 ### `cp`
 
+`cp` stands for copy
+
+it copies a file
+
+---
+
 ### `rm`
+
+`rm` stands for remove, it means deleting a file.
+
+When used with the `-r` flag, it can delete directories as well.
+
+---
+
+### `mv`
+
+stands for move
+
+it is used to either move a file or directory to another location or rename a file or directory
+
+---
+
+### `mkdir`
+
+stands for makeDirectory
+
+it creates a directory with your specified name
+
+---
+
+### `md5sum`
+
+this is a checksum function
+
+a checksum is like the DNA of a file, if the contents of two files are the same, their checksums are the same as well.
+
+---
+
+<split even  >
+::: block
+
+Contents of file1.txt:
+
+```
+Hello World!
+```
+
+:::
+
+::: block
+
+Contents of file2.txt:
+
+```
+Hello World!
+```
+
+:::
+
+::: block
+
+Contents of file3.txt:
+
+```
+hello world!
+```
+
+:::
+</split>
+
+```bash
+$ md5sum file1.txt file2.txt file3.txt
+8ddd8be4b179a529afa5f2ffae4b9858  file1.txt
+8ddd8be4b179a529afa5f2ffae4b9858  file2.txt
+c897d1410af8f2c74fba11b1db511e9e  file3.txt
+```
+
+Because the contents of file1 and file2 are the same, their checksum are both `8ddd8be4b179a529afa5f2ffae4b9858`
+
+file3's content, though similar, is different, hence it's checksum `c897d1410af8f2c74fba11b1db511e9e` is different from file1 & file2
+
+---
+
+### `touch`
+
+this command is usually used to create a file.
+
+```bash
+$ touch file.txt
+$ ls
+file.txt
+```
+
+---
+
+### `echo`
+
+this commands repeats its input
+
+this is similar to a print function in Python
+
+Often used for seeing environment variables or quickly producing inputs for piping.
+
+---
