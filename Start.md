@@ -335,4 +335,6 @@ $ echo "Hello"
 Hello
 ```
 
+You'll learn about some special usage in section [[Pipe and Redirection]]
+
 ---
