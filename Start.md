@@ -142,6 +142,19 @@ it shows you the current directory in the file system.
 
 ---
 
+The current directory is `/home/user`
+
+```bash
+$ pwd
+/home/user
+
+$ cd ~/Document
+$ pwd
+/home/user/Document
+```
+
+---
+
 ### `cat`
 
 `cat` stands for con==CAT==enate
@@ -169,6 +182,21 @@ Hello World!
 
 it copies a file
 
+Example:
+
+```bash
+$ ls
+file1
+$ cat file1
+Hello!
+
+$ cp file1 file2
+$ ls
+file1 file2
+$ cat file2
+Hello!
+```
+
 ---
 
 ### `rm`
@@ -177,13 +205,36 @@ it copies a file
 
 When used with the `-r` flag, it can delete directories as well.
 
+```bash 
+$ ls 
+file1 file2 file3
+$ rm file2 file3
+$ ls
+file1
+```
+
 ---
 
 ### `mv`
 
 stands for move
 
-it is used to either move a file or directory to another location or rename a file or directory
+it is used to either move a file or directory to another location or rename a file or directory.
+
+```bash
+$ ls
+file1
+# using mv to rename a file
+$ mv file1 file2
+$ ls
+file2
+
+# and then moving the file
+# to another directory
+$ mv file2 ~/Download/
+$ ls ~/Download
+file2
+```
 
 ---
 
@@ -192,6 +243,12 @@ it is used to either move a file or directory to another location or rename a fi
 stands for makeDirectory
 
 it creates a directory with your specified name
+
+```bash
+$ pwd
+/home/user
+
+```
 
 ---
 
@@ -267,5 +324,12 @@ this commands repeats its input
 this is similar to a print function in Python
 
 Often used for seeing environment variables or quickly producing inputs for piping.
+
+---
+
+```bash
+$ echo "Hello"
+Hello
+```
 
 ---
