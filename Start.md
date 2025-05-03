@@ -91,5 +91,11 @@ For example:
 cd ~
 cd
 
+cd / # / stands for root
+# change directory to the .local directory in your home
+cd ~/.local
 
+cd .. # Change to upper directory
+
+cd . # Change to current directory
 ```
