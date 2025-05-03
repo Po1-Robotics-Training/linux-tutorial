@@ -248,6 +248,9 @@ it creates a directory with your specified name
 $ pwd
 /home/user
 
+$ mkdir ~/Test
+$ ls -l
+drwxr-xr-x 2 user user 40 May  3 13:50 Test/
 ```
 
 ---
