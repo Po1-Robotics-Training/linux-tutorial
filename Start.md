@@ -150,6 +150,19 @@ it is used to output one or more file's content and turn them into one single ou
 
 ---
 
+Content of file1:
+
+```
+Hello World!
+```
+
+```bash
+$ cat file1
+Hello World!
+```
+
+---
+
 ### `cp`
 
 `cp` stands for copy
