@@ -70,3 +70,26 @@ margin: "0.3"
 ### `ls`
 
 ls 是用來列出(list)現時目錄中的files和directories
+
+-l stands for list form, it turns the output into a more informative list
+
+-A stands for all, it allows you to see the hidden files that starts with a dot (.)
+
+-F stands for classify, it appends indicators after the file name to show what type of file it is
+
+---
+
+### `cd`
+
+cd is used for changing directories
+
+When typed without a path, it returns you to your home directory. 
+
+For example:
+```bash
+# This two commands does the same thing, both returning you to your home directory
+cd ~
+cd
+
+
+```
