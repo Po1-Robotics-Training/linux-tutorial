@@ -1,6 +1,7 @@
 {
   "pinned": [
     "editor:insert-tag",
-    "obsidian-git:edit-gitignore"
+    "obsidian-git:edit-gitignore",
+    "app:reload"
   ]
 }
