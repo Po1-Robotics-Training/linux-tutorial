@@ -4,6 +4,7 @@ tags:
   - Linux/ssh
   - Linux/Server
 ---
+
 # OpenSSH
 
 ---
@@ -14,16 +15,41 @@ OpenSSH is a package that allows one to remotely connect to a server that has th
 
 ## How to use it
 
-Firstly, you'd have to get the IP address or the domain of the server you're ssh-ing into.
-
-Then, you have to know the name of the login user.
+1. Get the IP address of the domain of the server you're ssh-ing into.
+2. Get the name of the user you're logging into.
 
 ---
 
-### Syntax
+## Syntax
 
 ```bash
 ssh <name>@<IP/domain>
 ```
 
-Sometimes, you might get an error saying that the connection has timed out on Port 22
+Now that you've successfully logged-in to the server let's see some common problems that you might encounter.
+
+---
+
+## Common Errors
+
+ Sometimes, you might get an error saying that the connection has timed out on Port 22.
+
+You can fix this by specifying which port to connect using the `-P` flag.
+
+---
+
+## Like this
+
+```bash
+ssh -p8000 <name>@<IP/domain>
+```
+
+---
+
+## Uploading keys
+
+You can facilitate login speed by uploading your key to the server.
+
+```bash
+ssh-copy-id -p<port> <name>@<IP/domain>
+```
