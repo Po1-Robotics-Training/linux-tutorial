@@ -72,7 +72,7 @@ Here are some of the ones you'll learn in this tutorial:
 
 ---
 
-## 基本操作
+## Basic Usage
 
 ### `ls`
 
