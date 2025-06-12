@@ -4,36 +4,43 @@ tags:
 margin: "0.3"
 ---
 
-# 如何使用Linux
+# How to use Linux
 
 ---
 
-## 什麼是Linux?
+## What is Linux?
 
-- Linux 是一個作業系統，他的功能是
-	1. 管理硬件
-	2. 管理軟體
-	3. 為用戶提供使用層面
+- Linux is an operating system, its main functions are:
+	1. managing hardware
+	2. managing software
+	3. providing a userspace for its users
 
-負責提供基本使用層面的是Coreutils。
+The software responsible for providing a basic userspace is called Coreutils.
 
 ---
 
-## Linux的用語
+## Linux lingo
 
-在Windows中，大家有資料夾/Folders，C盤/C drive `C:\` 和 檔案/Files
+%% 在Windows中，大家有資料夾/Folders，C盤/C drive `C:\` 和 檔案/Files %%
 
-在Linux中，有着自己專業的字眼
+In Windows, you have folder, a C drive `C:\` and files.
+
+%% 在Linux中，有着自己專業的字眼
 - 資料夾叫做Directories
 - C drive 的概念是有點不同，叫做Devices，系統的最高層叫Root，而每個device連上的位置叫Mount
-- Home folder是`/home/<username>`
+- Home folder是`/home/<username>` %%
+
+In Linux, there are more technical terms used:
+- folders are called Directories
+- The concept of a C drive is different, all connected hardware are called Devies, the highest level of the filesystem is called ==Root==, and the place each storage devices attaches to is called a mount
+- And the home folder is `/home/<Username>`
 
 ---
 
-## Coreutils是什麼來的?
+## Coreutils does what?
 
-它是一套有着能使用戶們可以對系統進行基本的軟體集。
-以下是你們會最常用到的指令:
+Coreutils provides a suite of binaries for users to operate and control the system.
+Here are some of the ones you'll learn in this tutorial:
 
 <split  wrap="2">
 ::: block
@@ -69,7 +76,9 @@ margin: "0.3"
 
 ### `ls`
 
-ls 是用來列出(list)現時目錄中的files和directories
+%% ls 是用來列出(list)現時目錄中的files和directories %%
+
+`ls` is used to list out the files and directories in the working directory.
 
 `-l` stands for list form, it turns the output into a more informative list
 
