@@ -75,6 +75,7 @@ Comments are not a must but it is generally advised to have.
 ## Example graph 2
 
 ```mermaid
+%% 3 branches %%
 gitGraph:
 	commit
 	commit
@@ -125,6 +126,7 @@ So what would we do when we want the `main` branch to have those feature updates
 ## Example graph 3
 
 ```mermaid
+%% merging two branch %%
 gitGraph:
 	commit
 	commit
@@ -146,3 +148,66 @@ gitGraph:
 ![[Git#^957b53]]
 
 Now, the `main` branch has the features added `new_feature` and `another_feature`.
+
+---
+
+## 4. Checkout
+
+---
+
+![[Git#^957b53]]
+
+The branch that we are currently on is the `main` branch, if we want to change to the other branches, we would use the checkout sub-command.
+
+---
+
+```mermaid
+%% checking out main and commiting %%
+gitGraph:
+	commit
+	commit
+	branch new_feature
+	commit
+	commit
+	checkout main
+	branch another_feature
+	commit
+	checkout main
+	merge new_feature
+	merge another_feature
+	commit id: "An update"
+```
+
+After checking-out to the main branch, I've created a new commit with the message: "An update" in the main branch.
+
+---
+
+## 5. Staging and adding files
+
+---
+
+Now that we have learned how to navigate inside a git repository, it's time to see how we can add files to an existing one.
+
+---
+
+## Example graph 4
+
+```mermaid
+%% add/stage new file %%
+gitGraph:
+	commit
+	commit
+	branch new_feature
+	commit
+	commit
+	checkout main
+	branch another_feature
+	commit
+	checkout main
+	merge new_feature
+	merge another_feature
+	commit id: "An update"
+	commit id: "Added apps.json"
+```
+
+In this graph, I've added a new file called `apps.json` and committed this change to the repository with the message: "Added apps.json".
