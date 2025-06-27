@@ -211,3 +211,147 @@ gitGraph:
 ```
 
 In this graph, I've added a new file called `apps.json` and committed this change to the repository with the message: "Added apps.json".
+
+---
+
+# Git Command Line
+
+---
+
+Now that you have seen what git does,
+
+let's learn how to use git!
+
+---
+
+## 1. Initialising a git repository
+
+---
+
+Firstly you need to set a username and email account to be used for git.
+
+```bash
+git config user.name "Your Name"
+git config user.email "YOUR EMAIL"
+```
+
+If you don't have an email, you can put in a fake one.
+
+---
+
+```bash
+git init
+```
+
+This would initialise a git repository inside your current directory.
+
+---
+
+Run this command to see the current status of the repository.
+
+```bash
+git status
+```
+
+You can always run this command every time you want to check the status of your repository.
+
+---
+
+```bash
+ls -AF
+.git/
+```
+
+A `.git` directory is created.
+
+This is where git stores all your commits, branches and tags.
+
+You would not interact with this directory in normal use cases.
+
+---
+
+## 2. Committing changes
+
+---
+
+By default, the git repository is empty on creation and the branch that git uses is called `master`.
+
+Let's create a file too see how to commit this change!
+
+---
+
+```bash
+touch file.txt
+```
+
+Now you have to add the file to the stage for committing.
+
+```bash
+git add file.txt
+```
+
+---
+
+```bash
+git status
+```
+
+```
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   file.txt
+
+
+```
+
+As you can see `file.txt` is now ready to be committed.
+
+---
+
+```bash
+git commit -m "My first commit"
+```
+
+---
+
+You can see all your commit history with this command:
+
+```bash
+git log
+```
+
+```
+commit 41657921e8dcef44d20e71c46ed926ce874a6f42 (HEAD -> master)
+Author: NAME <EMAIL>
+Date:   Fri Jun 27 15:48:36 2025 +0800
+
+    My first commit
+```
+
+---
+
+Now let's put something into `file.txt` and commit it.
+
+`file.txt`:
+
+```
+Hello World
+```
+
+And now you would try committing it yourself.
+
+---
+
+### 2.1 Reverting a commit
+
+---
+
+If for some reason you need to undo a commit, you can use the `revert` command:
+
+First you have to get the hash of the commit you'd like to go back to.
+
+Use `git log` and copy the hash.
