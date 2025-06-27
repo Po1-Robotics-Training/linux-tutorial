@@ -355,3 +355,122 @@ If for some reason you need to undo a commit, you can use the `revert` command:
 First you have to get the hash of the commit you'd like to go back to.
 
 Use `git log` and copy the hash.
+
+---
+
+How to revert to that commit.
+
+```bash
+git revert COMMIT_HASH
+```
+
+---
+
+Running the following commands, you can see that you have reverted to a previous commit.
+
+```
+git log
+```
+
+```
+git status
+```
+
+---
+
+## 3. Branching
+
+---
+
+To create a new branch run this:
+
+```bash
+git branch <BRANCH_NAME>
+```
+
+---
+
+### 3.1 Check-outing other branch
+
+---
+
+If you need to switch to another branch, you can use the `checkout` command:
+
+```bash
+git checkout <BRANCH_NAME>
+```
+
+---
+
+## 4. Merging
+
+---
+
+When you have implemented some changes on your branch and would like to add it those commits to another branch,
+
+you can use the `merge` command.
+
+```bash
+git checkout main
+git merge <BRANCH_NAME>
+```
+
+You'll have to checkout to the branch you want to merge first.
+
+---
+
+## 5. Working with remote repository
+
+---
+
+### 5.1 Cloning
+
+In this tutorial, we'll use the GitHub repository as an example.
+
+```bash
+git clone https://github.com/Po1-Robotics-Training/linux-tutorial.git
+```
+
+After which you can `cd` into the directory.
+
+---
+
+### 5.2 Fetching/Puling
+
+---
+
+To receive new changes that happened on the remote repo.
+
+```bash
+git fetch
+```
+
+This would update your local machine with the new changed.
+
+However it does not automatically apply those updates to your branch.
+
+---
+
+This is where you can use the `pull` command.
+
+The pull command does 2 things:
+1. run `git fetch` to receive updates
+2. run a merge with the remote branch
+
+```bash
+git pull
+```
+
+---
+
+### 5.3 Pushing
+
+---
+
+After committing your changes to the local copy of the remote branch.
+
+```bash
+git push
+```
+
+Remember, first commit your changes and then push if you have to.
