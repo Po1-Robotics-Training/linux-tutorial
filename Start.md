@@ -1,7 +1,6 @@
 ---
 tags:
   - Linux
-margin: "0.3"
 ---
 
 # How to use Linux
@@ -76,6 +75,8 @@ Here are some of the ones you'll learn in this tutorial:
 
 ### `ls`
 
+---
+
 %% ls 是用來列出(list)現時目錄中的files和directories %%
 
 `ls` is used to list out the files and directories in the working directory.
@@ -105,6 +106,8 @@ $ ls -F
 file1  file2  file4*
 ```
 
+---
+
 ```bash
 $ ls -lAF
 total 0
@@ -123,6 +126,8 @@ As for why file4 shows up with a star, you'd learn about it in the [[Permission]
 cd is used for changing directories
 
 When typed without a path, it returns you to your home directory.
+
+---
 
 For example:
 
@@ -310,6 +315,8 @@ $ md5sum file1.txt file2.txt file3.txt
 8ddd8be4b179a529afa5f2ffae4b9858  file2.txt
 c897d1410af8f2c74fba11b1db511e9e  file3.txt
 ```
+
+---
 
 Because the contents of file1 and file2 are the same, their checksum are both `8ddd8be4b179a529afa5f2ffae4b9858`
 
